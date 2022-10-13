@@ -1,0 +1,23 @@
+ create database Hospital;
+USE hospital;
+create table department_info(D_id int(10) primary key auto_increment,department_name varchar(30) );
+alter table department_info modify department_name varchar(100) not null;
+desc department_info;
+INSERT into department_info VALUES (1,"Accident and Emergency Care");
+INSERT into department_info VALUES (2,"Cancer Care");
+INSERT into department_info VALUES (3,"Cardiology");
+INSERT into department_info VALUES (4,"Cardiothoracic Vascular Surgery");
+INSERT into department_info VALUES (5,"Gastrointestinal Science");
+INSERT into department_info VALUES (6,"Laparoscopic Surgery");
+INSERT into department_info VALUES (7,"Nephrology");
+INSERT into department_info VALUES (8,"Neurology");
+INSERT into department_info VALUES (9,"Organ transplant");
+INSERT into department_info VALUES (10,"Orthopaedics");
+INSERT into department_info VALUES (11,"Urology");
+INSERT into department_info VALUES (12,"General Medicine and Diabetology");
+INSERT into department_info VALUES (13,"Neurosurgery(Brain and Spine Center)");
+INSERT into department_info VALUES (14,"Neonatology");
+INSERT into department_info VALUES (15,"ENT");
+INSERT into department_info VALUES (16,"Radiology ");
+SELECT * FROM department_info;
+
